@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag 'diaries', media: 'all', 'data-turbolinks-track': 'reload' %>
+<main>
+  <div class="box">
+    <%=link_to "新規投稿へ", new_diary_path %>
+
+    <div class="diaries-container">
+    <% @diaries.each do |d| %>
+      <div class="diary">
+        <%= d.content %>
+        <%=d.created_at%>
+        <%=link_to"詳細へ",diary_path(d.id)%>
+        <%= link_to "編集する", edit_diary_path(d.id) %>
+        <%= button_to "削除する", diary_path(d.id), method: :delete %>
+        <%= button_to "削除する",diary_path(d.id),method: :delete%>
+      </div>
+    <%end%>
+  </div>
+
+</main>

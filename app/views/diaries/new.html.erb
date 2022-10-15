@@ -1,0 +1,22 @@
+ <link rel="stylesheet" type="text/css" href="stylesheets/diaries.scss">
+
+
+
+<div class ="katamari">
+      <%= form_for @diary do |d| %>
+
+    <div class="field">
+        <%= d.label :title %>
+        <%= d.text_field :title, :size => "30x2"  %>
+    </div>
+
+    <div class="field">
+        <%= d.label :content %>
+        <%= d.text_area :content, :size => "30x3"  %>
+    </div>
+
+        <%= d.submit "気持ち日記を投稿する" %>
+        <% end %>
+
+    <%= link_to "気持ち日記一覧に戻る", diaries_path %>
+</div>

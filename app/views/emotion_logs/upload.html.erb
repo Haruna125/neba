@@ -1,0 +1,15 @@
+<h2>Add New URL</h2>
+
+<%= form_for :website, url: websites_path do |f| %>
+  <p>
+    <%= f.text_field :address, placeholder: 'URLを入力してください' %>
+    <% if @website.errors.messages[:address].any? %>
+      <span class="error">
+        <%= @website.errors.messages[:address][0] %>
+      </span>
+    <% end %>
+  </p>
+  <p>
+    <%= f.submit "登録する" %>
+  </p>
+<% end %>

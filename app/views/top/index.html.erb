@@ -1,0 +1,74 @@
+<!DOCTYPE html><html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" /><link rel="stylesheet" href="top.css">
+    <title>Document</title></head>
+
+<body>
+
+
+    <main>
+        <div class ="nakami">
+            <img src="../../../assets/v38_2.png" alt="ハートの写真" width="100%">
+            <div class="neba-info">
+                一般社団法人NeBA(ティーン向けメンタルヘルス自助団体)は学生を対象にメンタルヘルスに関する活動を行う団体です。<br>本サービスは学生のみならず誰でも気軽に自分のヘルスケアができる１.気持ち日記、２.気持ち診断の２つの機能を搭載したWebアプリケーションです。
+            </div>
+
+            <div class="kinou">
+                <div class = "katamari1">
+                    <div class = "nikki">気持ち日記</div>
+                        <div class ="content1">
+                            <p>自分の日々の気持ちを書き留めて<br>見返せるようにしてみましょう</p>
+                        <div class ="bighako">
+                            <div class ="hako">
+                              <div class="button3">
+                              <%= link_to '入り口', :controller => "diaries", :action => "new",class:"link"%>
+                              </div>
+                            </div>
+                            <div class ="hako">
+                              <img src="../../../assets/v9_15.png" alt="日記の写真"class="logo-image">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class = "katamari2">
+                        <div class = "sindan">気持ち診断</div>
+                            <div class ="content2">
+                                <p>AIで自分の顔を認識すると今のあなた<br>の気持ちに言葉をかけてくれます。</p>
+                          <div class ="bighako">
+                            <div class ="hako">
+                                <div class="button4">
+                                <%= link_to '入り口', :controller => "emotion_logs", :action => "new",class:"link"%>
+                                </div>
+                            </div>
+                            <div class ="hako">
+                                <img src="../../../assets/v9_14.png" alt="診断の写真"class="logo-image">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    </main>
+    <fotter>
+        <div class="fotter1">
+            <p class="oomoji">一般社団法人NeBA</p>
+            <p class="komoji">©2022 一般社団法人NeBA</p>
+        </div>
+    </fotter>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
